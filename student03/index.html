@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deeraj Reddy | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="logo">Deeraj<span>.</span></h2>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <div class="hero">
+      <h1>Hi, I'm <span>Deeraj Reddy</span></h1>
+      <p>A Computer Science Student | Java Developer | Web Developer</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm Deeraj Reddy, a Computer Science student passionate about software development.
+      I enjoy building projects using Java, Web Development, and Database technologies.
+      My goal is to become a successful Software Engineer.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">Java</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>A Java project to manage books, users, and transactions with database integration.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Student Grading System</h3>
+        <p>A Java program that calculates marks, grades, and generates student reports.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Employee Salary Calculator</h3>
+        <p>A Java application to calculate salary based on allowances and deductions.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+      <p><b>Email:</b> edduladeerajreddy@gmail.com</p>
+      <p><b>Phone:</b> +91 XXXXXXXXXX</p>
+      <p><b>Location:</b> Chennai, India</p>
+
+      <form class="contact-form" onsubmit="return showMessage()">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+
+      <p id="msg"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Deeraj Reddy | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
